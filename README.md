@@ -57,21 +57,49 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 
     - **Install kubectl** as per https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+      - kubectl is a command-line cluster management tool for Kubernetes
 
-The following steps would install kubectl
+- The following steps would install kubectl
   - curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" 
   - sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl 
   - kubectl version --client 
-  - kubectl version --client --output=yaml 
+  - kubectl version --client --output=yaml
+
+**  Configure the kubectl environment**
+  - Use the GetKubeConfigCommand in the Outputs tab for the VPC stack to configure your local kubectl environment so you can connect to the resources that were created. 
+  - If we are running this command on a cloud EC2 machine – we would need to bring the key to the machine. 
+  - Upload your key to a new repo on Github and use git clone
+  - Example 
+    - git clone https://github.com/JeeKayPee/Keys
+  - Before running the command, we also need to run chmod 400 keyname
 
 
 
 
 
+
+# Installation of sonobuoy
+  - Download the latest release for your client platform. 
+    - (We are installing v14 - https://github.com/vmware-tanzu/sonobuoy/releases/tag/v0.14.0)
+    - wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.14.0/sonobuoy_0.14.0_linux_amd64.tar.gz
+  - Extract the tarball:
+  -   tar -xvf <RELEASE_TARBALL_NAME>.tar.gz
+  -   Rename the file
+    -   mv sonobuoy sonobuoy14
+  - Move the extracted sonobuoy executable to somewhere on your PATH.
+    - sudo cp sonobuoy14 /usr/bin
+
+
+# To launch conformance tests (ensuring CNCF conformance) and wait until they are finished run:
+
+  - sonobuoy run --wait
 
 
 
  
+
+
+
 
 
 
