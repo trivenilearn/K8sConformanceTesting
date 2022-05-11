@@ -58,17 +58,17 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 # Step 3. (Optional) Test Your Kubernetes Cluster
   - Create ubuntu EC2- T2.Micro
-    - sudo apt update 
+    - **sudo apt update** 
 
 
     - **Install kubectl** as per https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
       - kubectl is a command-line cluster management tool for Kubernetes
 
 - The following steps would install kubectl
-  - curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" 
-  - sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl 
-  - kubectl version --client 
-  - kubectl version --client --output=yaml
+  - **curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" **
+  - **sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl **
+  - **kubectl version --client **
+  - **kubectl version --client --output=yaml**
 
 **Configure the kubectl environment**
 
@@ -89,10 +89,10 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 
   - For ease of use, set this local environment variable so kubectl uses the downloaded file:
-    - export KUBECONFIG=$(pwd)/kubeconfig
+    - **export KUBECONFIG=$(pwd)/kubeconfig**
 
   - Run this command to list all Kubernetes nodes
-    - kubectl get nodes
+    - **kubectl get nodes**
   
   ![image](https://user-images.githubusercontent.com/45666264/167780044-0517ca11-e826-4d56-ab73-a71b1a9c308d.png)
 
@@ -100,20 +100,21 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 # Installation of sonobuoy
   - Download the latest release for your client platform. 
     - (We are installing v14 - https://github.com/vmware-tanzu/sonobuoy/releases/tag/v0.14.0)
-    - wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.14.0/sonobuoy_0.14.0_linux_amd64.tar.gz
+    - **wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.14.0/sonobuoy_0.14.0_linux_amd64.tar.gz**
   - Extract the tarball:
     - tar -xvf <RELEASE_TARBALL_NAME>.tar.gz
+    - Example - **tar -xvf sonobuoy_0.14.0_linux_amd64.tar.gz**
   - Rename the file
-    - mv sonobuoy sonobuoy14
+    - **mv sonobuoy sonobuoy14**
   - Move the extracted sonobuoy executable to somewhere on your PATH.
-    - sudo cp sonobuoy14 /usr/bin
+    - **sudo cp sonobuoy14 /usr/bin**
 
   ![image](https://user-images.githubusercontent.com/45666264/167779374-537d045d-edc4-48cc-badb-2f02f7e475dc.png)
 
 
 # To launch conformance tests (ensuring CNCF conformance) and wait until they are finished run:
 
-  - sonobuoy14 run --wait
+  - **sonobuoy14 run --wait**
   
   
   ![image](https://user-images.githubusercontent.com/45666264/167780284-6224e577-42cc-4a44-beab-cd9ac3492379.png)
