@@ -51,7 +51,7 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 # Step 3. (Optional) Test Your Kubernetes Cluster
   - Create ubuntu EC2- T2.Micro
-        - Install kubectl as per https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+    - Install kubectl as per https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
   - curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" 
   - sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl 
   - kubectl version --client 
@@ -69,13 +69,7 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 
 
-Create ubuntu EC2- T2.Micro
-Install kubectl as per 
-https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" 
-sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl 
-kubectl version --client 
-kubectl version --client --output=yaml 
+
 ![image](https://user-images.githubusercontent.com/45666264/167769675-9a71a1b5-8a0b-4025-b182-bb7b50598329.png)
 
 
