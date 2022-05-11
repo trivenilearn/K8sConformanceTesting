@@ -76,7 +76,7 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
   - Upload your key to a new repo on Github and use git clone
   - Example 
     - **git clone https://github.com/JeeKayPee/Keys**
-  - Run **chmod 400 <keyname>**
+  - Run **chmod 400 keyname**
 
   ![image](https://user-images.githubusercontent.com/45666264/167778822-5b5b336a-9696-4362-ac52-e948a3384c32.png)
 
@@ -95,9 +95,6 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
     - kubectl get nodes
   
   ![image](https://user-images.githubusercontent.com/45666264/167780044-0517ca11-e826-4d56-ab73-a71b1a9c308d.png)
-
-
-
 
 
 # Installation of sonobuoy
