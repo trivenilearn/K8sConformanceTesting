@@ -8,17 +8,29 @@
   - Consider choosing an AWS Region closest to your data center or corporate network to reduce network latency between systems running on AWS and the systems and users on your corporate network.
 
 # 2. Create a keyPair
-  - Create a key pair in your preferred region. To do this, in the navigation pane of the Amazon EC2 console, choose Key Pairs, Create Key Pair, type a name, and then choose Create.
+  - Create a key pair in your preferred region. To do this, in the navigation pane of the Amazon EC2 console, choose **Key Pairs, Create Key Pair**, type a name, and then choose Create.
 
 # 3. Launch a Kubernetes cluster 
   - Click on https://aws.amazon.com/quickstart/architecture/vmware-kubernetes/
-  - Select Deploy into a new VPC
-  - Specify template - Use default options and click on Next. Note – region is Oregon (us-west-2)
+  - Select **Deploy into a new VPC**
+  - **Step 1 - Specify template** 
+    - On the Select Template page, keep the default setting for the template URL, and then
+choose Next.
+    - 
+    - Use default options and click on Next. Note – region is Oregon (us-west-2)
 
-![image](https://user-images.githubusercontent.com/45666264/167769601-bbbc598d-8d3d-4016-aa30-89af4fe05143.png)
+![image](https://user-images.githubusercontent.com/45666264/167770644-a03279c2-a5d1-4c5d-891d-94b5c1d882b0.png)
+
+  - **Step 2 - Specify stack details** 
+    - On the Specify Details page, change the stack name if needed. Review the parameters for the template. Provide values where input is required. For all other parameters, review the default settings and customize them as necessary. When all parameters are set, choose Next.
 
 
-Step 2 - Specify stack details – Configure the following and click on Next
+
+
+
+
+
+
 ![image](https://user-images.githubusercontent.com/45666264/167769622-acb3f82e-115b-4e90-af95-b3786185b212.png)
 
 
