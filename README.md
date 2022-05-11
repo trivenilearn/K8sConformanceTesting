@@ -127,7 +127,7 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 sonobuoy14 run --wait
 ```
 
-  
+**The test will take several hours to provide results**  
   
   ![image](https://user-images.githubusercontent.com/45666264/167780284-6224e577-42cc-4a44-beab-cd9ac3492379.png)
 
