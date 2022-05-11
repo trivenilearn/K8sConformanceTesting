@@ -50,6 +50,11 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 ![image](https://user-images.githubusercontent.com/45666264/167774193-2203bc61-773f-492e-aee6-e99a35d10810.png)
 
+**After the dpeloyemnt is complete **
+
+![image](https://user-images.githubusercontent.com/45666264/167778290-a579d4a2-1e2b-48e6-b9f8-76af5bd4ea75.png)
+
+
 
 # Step 3. (Optional) Test Your Kubernetes Cluster
   - Create ubuntu EC2- T2.Micro
@@ -65,13 +70,22 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
   - kubectl version --client 
   - kubectl version --client --output=yaml
 
-**  Configure the kubectl environment**
-  - Use the GetKubeConfigCommand in the Outputs tab for the VPC stack to configure your local kubectl environment so you can connect to the resources that were created. 
+**Configure the kubectl environment**
+
   - If we are running this command on a cloud EC2 machine – we would need to bring the key to the machine. 
   - Upload your key to a new repo on Github and use git clone
   - Example 
-    - git clone https://github.com/JeeKayPee/Keys
-  - Before running the command, we also need to run chmod 400 keyname
+    - **git clone https://github.com/JeeKayPee/Keys**
+  - Before running the command, we also need to run **chmod 400 <keyname>**
+
+  ![image](https://user-images.githubusercontent.com/45666264/167778822-5b5b336a-9696-4362-ac52-e948a3384c32.png)
+
+
+  - Use the GetKubeConfigCommand in the Outputs tab for the VPC stack to configure your local kubectl environment so you can connect to the resources that were created. 
+
+![image](https://user-images.githubusercontent.com/45666264/167778506-95c6c4a6-6bce-4352-bd10-f8b2ceef6ce1.png)
+
+
 
 
 
