@@ -54,7 +54,7 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 ![image](https://user-images.githubusercontent.com/45666264/167774193-2203bc61-773f-492e-aee6-e99a35d10810.png)
 
-**After the dpeloyemnt is complete **
+**After the deployment is complete **
 
 ![image](https://user-images.githubusercontent.com/45666264/167778290-a579d4a2-1e2b-48e6-b9f8-76af5bd4ea75.png)
 
