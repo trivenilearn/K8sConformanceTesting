@@ -88,6 +88,13 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 ![image](https://user-images.githubusercontent.com/45666264/167779171-5917a104-1bc3-44a4-ad10-29c41f886454.png)
 
 
+  - For ease of use, set this local environment variable so kubectl uses the downloaded file:
+    - export KUBECONFIG=$(pwd)/kubeconfig
+
+  - Run this command to list all Kubernetes nodes
+    - kubectl get nodes
+  
+  ![image](https://user-images.githubusercontent.com/45666264/167780044-0517ca11-e826-4d56-ab73-a71b1a9c308d.png)
 
 
 
