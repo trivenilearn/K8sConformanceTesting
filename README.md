@@ -10,12 +10,10 @@
 # 2. Create a keyPair
   - Create a key pair in your preferred region. To do this, in the navigation pane of the Amazon EC2 console, choose Key Pairs, Create Key Pair, type a name, and then choose Create.
 
-
-Click on 
-https://aws.amazon.com/quickstart/architecture/vmware-kubernetes/
-Select Deploy into a new VPC
-Step 1 - Specify template - Use default options and click on Next
-Note – region is Oregon (us-west-2)
+# 3. Launch a Kubernetes cluster 
+  - Click on https://aws.amazon.com/quickstart/architecture/vmware-kubernetes/
+  - Select Deploy into a new VPC
+  - Specify template - Use default options and click on Next. Note – region is Oregon (us-west-2)
 
 ![image](https://user-images.githubusercontent.com/45666264/167769601-bbbc598d-8d3d-4016-aa30-89af4fe05143.png)
 
