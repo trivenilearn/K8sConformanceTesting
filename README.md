@@ -43,6 +43,9 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
       - I acknowledge that AWS CloudFormation might require the following capability: CAPABILITY_AUTO_EXPAND
       - and click on Create Stack 
 
+![image](https://user-images.githubusercontent.com/45666264/167772955-a22847cd-34da-4279-b532-e214fda185c7.png)
+
+
 
 **The deployment takes about 10 to 15 minutes.**
 
