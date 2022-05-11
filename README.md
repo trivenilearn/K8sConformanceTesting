@@ -98,9 +98,9 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
     - (We are installing v14 - https://github.com/vmware-tanzu/sonobuoy/releases/tag/v0.14.0)
     - wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.14.0/sonobuoy_0.14.0_linux_amd64.tar.gz
   - Extract the tarball:
-  -   tar -xvf <RELEASE_TARBALL_NAME>.tar.gz
-  -   Rename the file
-    -   mv sonobuoy sonobuoy14
+    - tar -xvf <RELEASE_TARBALL_NAME>.tar.gz
+  - Rename the file
+    - mv sonobuoy sonobuoy14
   - Move the extracted sonobuoy executable to somewhere on your PATH.
     - sudo cp sonobuoy14 /usr/bin
 
