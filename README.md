@@ -56,7 +56,7 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 
 
-# Step 3. (Optional) Test Your Kubernetes Cluster
+# (Optional) Test Your Kubernetes Cluster
   - Create ubuntu EC2- T2.Micro
     - **sudo apt update** 
 
