@@ -109,9 +109,14 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
     - tar -xvf <RELEASE_TARBALL_NAME>.tar.gz
     - Example - **tar -xvf sonobuoy_0.14.0_linux_amd64.tar.gz**
   - Rename the file
-    - **mv sonobuoy sonobuoy14**
+  ``` 
+  mv sonobuoy sonobuoy14
+  ```
   - Move the extracted sonobuoy executable to somewhere on your PATH.
-    - **sudo cp sonobuoy14 /usr/bin**
+  ``` 
+  sudo cp sonobuoy14 /usr/bin
+  ```
+   
 
   ![image](https://user-images.githubusercontent.com/45666264/167779374-537d045d-edc4-48cc-badb-2f02f7e475dc.png)
 
