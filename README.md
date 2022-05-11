@@ -9,3 +9,4 @@
 # Create a keyPair
 - Create a key pair in your preferred region. To do this, in the navigation pane of the Amazon EC2 console, choose Key Pairs, Create Key Pair, type a name, and then choose Create.
 
+![image](https://user-images.githubusercontent.com/45666264/167769439-66b773a4-1d0d-49f7-857e-dd05d9bc9386.png)
