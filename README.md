@@ -15,7 +15,7 @@
   - Select **Deploy into a new VPC**
   - **Step 1 - Specify template** 
     - On the Select Template page, keep the default setting for the template URL, and then choose **Next**.
-    - 
+    
 ![image](https://user-images.githubusercontent.com/45666264/167770644-a03279c2-a5d1-4c5d-891d-94b5c1d882b0.png)
 
   - **Step 2 - Specify stack details** 
