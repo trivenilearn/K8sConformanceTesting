@@ -135,5 +135,6 @@ sonobuoy14 run --wait
 
 Select the cluster and click on the delete button
 This will delete the EC2 machines as well
-![Uploading image.png…]()
 
+
+![image](https://user-images.githubusercontent.com/45666264/167834940-99a683b8-4544-4398-976e-2d7989ce62c7.png)
