@@ -14,12 +14,16 @@
   - Click on https://aws.amazon.com/quickstart/architecture/vmware-kubernetes/
   - Select **Deploy into a new VPC**
   - **Step 1 - Specify template** 
-    - On the Select Template page, keep the default setting for the template URL, and then choose Next.
+    - On the Select Template page, keep the default setting for the template URL, and then choose **Next**.
     - 
 ![image](https://user-images.githubusercontent.com/45666264/167770644-a03279c2-a5d1-4c5d-891d-94b5c1d882b0.png)
 
   - **Step 2 - Specify stack details** 
-    - On the Specify Details page, change the stack name if needed. Review the parameters for the template. Provide values where input is required. For all other parameters, review the default settings and customize them as necessary. When all parameters are set, choose Next.
+    - On the Specify Details page, change the stack name if needed. 
+    - Review the parameters for the template. 
+    - Provide values where input is required. 
+    - For all other parameters, review the default settings and customize them as necessary. 
+    - When all parameters are set, choose **Next**.
 
 ![image](https://user-images.githubusercontent.com/45666264/167771461-a63e8a7d-d611-4143-bd6f-6599eab78b2b.png)
 
@@ -29,13 +33,17 @@ Admin Ingress Location (AdminIngressLocation) - CIDR block (IP address range) to
 
 SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH access to the instances. When you created an AWS account, this is the key pair you created in your preferred region.
 
+  - **Step 3 - Configure stack options** 
+    - Use default options and click on **Next**
 
 
 
 
 
 
-Step 3 - Configure stack options - Use default options and click on Next
+
+
+
 ![image](https://user-images.githubusercontent.com/45666264/167769632-310a58c1-46c0-4a28-a215-da9404f9bb65.png)
 
 
