@@ -76,7 +76,7 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
   - Upload your key to a new repo on Github and use git clone
   - Example 
     - **git clone https://github.com/JeeKayPee/Keys**
-  - Before running the command, we also need to run **chmod 400 <keyname>**
+  - Run **chmod 400 <keyname>**
 
   ![image](https://user-images.githubusercontent.com/45666264/167778822-5b5b336a-9696-4362-ac52-e948a3384c32.png)
 
@@ -111,52 +111,3 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
   - sonobuoy run --wait
 
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-For ease of use, set this local environment variable so kubectl uses the downloaded file:
-export KUBECONFIG=$(pwd)/kubeconfig
-
-SSH_KEY="path/to/GP_Key_RSA.pem"; scp -i $SSH_KEY -o ProxyCommand="ssh -i \"${SSH_KEY}\" ubuntu@54.90.164.238 nc %h %p" ubuntu@10.0.17.223:~/kubeconfig ./kubeconfig
-export KUBECONFIG=$(pwd)/kubeconfig
-kubectl get nodes
-
-
-![image](https://user-images.githubusercontent.com/45666264/167769693-334e6480-534c-49d7-b243-2ed6ce240473.png)
-
-![image](https://user-images.githubusercontent.com/45666264/167769709-8ebd84ed-5603-41d6-b81e-7a9989a2b4d3.png)
-
-
-Download an older version
-https://github.com/vmware-tanzu/sonobuoy/releases/tag/v0.14.0
-wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.14.0/sonobuoy_0.14.0_linux_amd64.tar.gz
-
-Extract the tarball
-tar -xvf <RELEASE_TARBALL_NAME>.tar.gz 
-Rename the file 
-Mv sonobuoy sonobuoy14
-Move the extracted sonobuoy executable to somewhere on your PATH.
-sudo cp sonobuoy14 /usr/bin
-
-![image](https://user-images.githubusercontent.com/45666264/167769728-14326a9c-e383-4023-8d86-b36586799356.png)
-
-To launch conformance tests (ensuring CNCF conformance) and wait until they are finished run:
-sonobuoy run --wait 
-
-If required run the following commands again
-SSH_KEY="path/to/GP_Key_RSA.pem"; scp -i $SSH_KEY -o ProxyCommand="ssh -i \"${SSH_KEY}\" ubuntu@54.90.164.238 nc %h %p" ubuntu@10.0.17.223:~/kubeconfig ./kubeconfig
-export KUBECONFIG=$(pwd)/kubeconfig
-kubectl get nodes
-
-![image](https://user-images.githubusercontent.com/45666264/167769745-0184742f-520a-492d-a5f7-adb577263e73.png)
