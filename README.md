@@ -118,9 +118,9 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 # To launch conformance tests (ensuring CNCF conformance) and wait until they are finished run:
 
- '''
-  sonobuoy14 run --wait
- '''
+
+  **sonobuoy14 run --wait**
+
   
   
   ![image](https://user-images.githubusercontent.com/45666264/167780284-6224e577-42cc-4a44-beab-cd9ac3492379.png)
