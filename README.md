@@ -42,7 +42,9 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
       - I acknowledge that AWS CloudFormation might create IAM resources with custom names.
       - I acknowledge that AWS CloudFormation might require the following capability: CAPABILITY_AUTO_EXPAND
       - and click on Create Stack 
-  -   
+
+
+**The deployment takes about 10 to 15 minutes.**
 
 
 
@@ -57,7 +59,7 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
  
 
 
-![image](https://user-images.githubusercontent.com/45666264/167769642-2e3d1023-d147-4d26-afe3-eb2c83eb5e67.png)
+
 
 Create ubuntu EC2- T2.Micro
 Install kubectl as per 
