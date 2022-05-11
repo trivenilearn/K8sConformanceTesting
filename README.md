@@ -13,6 +13,10 @@
 # 3. Launch a Kubernetes cluster 
   - Click on https://aws.amazon.com/quickstart/architecture/vmware-kubernetes/
   - Select **Deploy into a new VPC**
+
+![image](https://user-images.githubusercontent.com/45666264/167782287-e16c9e6a-4e88-4231-99a1-5508beb97812.png)
+
+
   - **Step 1 - Specify template** 
     - On the Select Template page, keep the default setting for the template URL, and then choose **Next**.
     
