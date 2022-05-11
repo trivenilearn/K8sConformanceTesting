@@ -45,17 +45,20 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 ![image](https://user-images.githubusercontent.com/45666264/167772955-a22847cd-34da-4279-b532-e214fda185c7.png)
 
-![image](https://user-images.githubusercontent.com/45666264/167774193-2203bc61-773f-492e-aee6-e99a35d10810.png)
-
 
 **The deployment takes about 10 to 15 minutes.**
+
+![image](https://user-images.githubusercontent.com/45666264/167774193-2203bc61-773f-492e-aee6-e99a35d10810.png)
+
 
 # Step 3. (Optional) Test Your Kubernetes Cluster
   - Create ubuntu EC2- T2.Micro
     - sudo apt update 
 
 
-    - Install kubectl as per https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+    - **Install kubectl** as per https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
+
+The following steps would install kubectl
   - curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" 
   - sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl 
   - kubectl version --client 
