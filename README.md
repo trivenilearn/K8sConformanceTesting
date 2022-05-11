@@ -14,24 +14,25 @@
   - Click on https://aws.amazon.com/quickstart/architecture/vmware-kubernetes/
   - Select **Deploy into a new VPC**
   - **Step 1 - Specify template** 
-    - On the Select Template page, keep the default setting for the template URL, and then
-choose Next.
+    - On the Select Template page, keep the default setting for the template URL, and then choose Next.
     - 
-    - Use default options and click on Next. Note – region is Oregon (us-west-2)
-
 ![image](https://user-images.githubusercontent.com/45666264/167770644-a03279c2-a5d1-4c5d-891d-94b5c1d882b0.png)
 
   - **Step 2 - Specify stack details** 
     - On the Specify Details page, change the stack name if needed. Review the parameters for the template. Provide values where input is required. For all other parameters, review the default settings and customize them as necessary. When all parameters are set, choose Next.
 
+![image](https://user-images.githubusercontent.com/45666264/167771461-a63e8a7d-d611-4143-bd6f-6599eab78b2b.png)
+
+Availability Zone (AvailabilityZone) - The Availability Zone for this cluster. Generally, we recommend that you run one cluster per Availability Zone and use tooling to coordinate across zones.
+
+Admin Ingress Location (AdminIngressLocation) - CIDR block (IP address range) to allow SSH access to the bastion host and HTTPS access to the Kubernetes API. Use **0.0.0.0/0** to allow access from all locations.
+
+SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH access to the instances. When you created an AWS account, this is the key pair you created in your preferred region.
 
 
 
 
 
-
-
-![image](https://user-images.githubusercontent.com/45666264/167769622-acb3f82e-115b-4e90-af95-b3786185b212.png)
 
 
 Step 3 - Configure stack options - Use default options and click on Next
