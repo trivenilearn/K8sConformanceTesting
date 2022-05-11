@@ -85,6 +85,7 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 ![image](https://user-images.githubusercontent.com/45666264/167778506-95c6c4a6-6bce-4352-bd10-f8b2ceef6ce1.png)
 
+![image](https://user-images.githubusercontent.com/45666264/167779171-5917a104-1bc3-44a4-ad10-29c41f886454.png)
 
 
 
@@ -102,6 +103,8 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
     -   mv sonobuoy sonobuoy14
   - Move the extracted sonobuoy executable to somewhere on your PATH.
     - sudo cp sonobuoy14 /usr/bin
+
+  ![image](https://user-images.githubusercontent.com/45666264/167779374-537d045d-edc4-48cc-badb-2f02f7e475dc.png)
 
 
 # To launch conformance tests (ensuring CNCF conformance) and wait until they are finished run:
