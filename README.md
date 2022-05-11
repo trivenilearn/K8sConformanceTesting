@@ -69,9 +69,9 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
       - kubectl is a command-line cluster management tool for Kubernetes
 
 - The following steps would install kubectl
-  - **curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" **
-  - **sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl **
-  - **kubectl version --client **
+  - **curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"**
+  - **sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl**
+  - **kubectl version --client**
   - **kubectl version --client --output=yaml**
 
 **Configure the kubectl environment**
