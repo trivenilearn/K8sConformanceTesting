@@ -131,4 +131,9 @@ sonobuoy14 run --wait
   
   ![image](https://user-images.githubusercontent.com/45666264/167780284-6224e577-42cc-4a44-beab-cd9ac3492379.png)
 
+# Delete the stack
+
+Select the cluster and click on the delete button
+This will delete the EC2 machines as well
+![Uploading image.png…]()
 
