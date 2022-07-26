@@ -79,17 +79,17 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
   - Use the GetKubeConfigCommand in the Outputs tab for the VPC stack to configure your local kubectl environment so you can connect to the resources that were created. 
   
-```
-export KUBECONFIG=$(pwd)/kubeconfig 
-kubectl get nodes 
-```
+
 ![image](https://user-images.githubusercontent.com/45666264/167778506-95c6c4a6-6bce-4352-bd10-f8b2ceef6ce1.png)
 
 ![image](https://user-images.githubusercontent.com/45666264/167779171-5917a104-1bc3-44a4-ad10-29c41f886454.png)
 
 
   - Run the following
-``` 
+```
+export KUBECONFIG=$(pwd)/kubeconfig 
+kubectl get nodes 
+
 sh deploySonobuoy.sh
 ``` 
 
