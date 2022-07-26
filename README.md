@@ -6,7 +6,7 @@
   - Use Oregon region
 
 # 2. Create a keyPair
-  - Create a key pair in Oregon region. To do this, in the navigation pane of the Amazon EC2 console, choose **Key Pairs, Create Key Pair**, type a name, and then choose Create.
+  - Create a key pair in Oregon region. To do this, in the navigation pane of the Amazon EC2 console, choose **Key Pairs, Create Key Pair**, type a name, select .pem format and then choose Create.
 
 # 3. Launch a Kubernetes cluster 
   - Click on https://aws.amazon.com/quickstart/architecture/vmware-kubernetes/
