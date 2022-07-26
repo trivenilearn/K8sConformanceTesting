@@ -7,6 +7,9 @@
 
 # 2. Create a keyPair
   - Create a key pair in Oregon region. To do this, in the navigation pane of the Amazon EC2 console, choose **Key Pairs, Create Key Pair**, type a name, select .pem format and then choose Create.
+  
+  - Make a fork of https://github.com/SmithaVerity/K8sConformanceTesting
+  - Upload the keys file to https://github.com/<< Your id >>/K8sConformanceTesting
 
 # 3. Launch a Kubernetes cluster 
   - Click on https://aws.amazon.com/quickstart/architecture/vmware-kubernetes/
@@ -60,25 +63,14 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 # (Optional) Test Your Kubernetes Cluster
   - Create ubuntu EC2- T2.Micro
-    - **sudo apt update** 
-
-
-    - **Install kubectl** as per https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
-      - kubectl is a command-line cluster management tool for Kubernetes
-
-- The following steps would install kubectl
-  - **curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"**
-  - **sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl**
-  - **kubectl version --client**
-  - **kubectl version --client --output=yaml**
+   - **Install kubectl** 
+    - Run the following commands
+    git clone https://github.com/SmithaVerity/K8sConformanceTesting
+    cd K8sConformanceTesting/
+    sh deployTestCluster1.sh
 
 **Configure the kubectl environment**
-
-  - If we are running this command on a cloud EC2 machine – we would need to bring the key to the machine. 
-  - Upload your key to a new repo on Github and use git clone
-  - Example 
-    - **git clone https://github.com/JeeKayPee/Keys**
-  - Run **chmod 400 keyname**
+    chmod 400 <<keyname>>
 
   ![image](https://user-images.githubusercontent.com/45666264/167778822-5b5b336a-9696-4362-ac52-e948a3384c32.png)
 
@@ -90,30 +82,14 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 ![image](https://user-images.githubusercontent.com/45666264/167779171-5917a104-1bc3-44a4-ad10-29c41f886454.png)
 
 
-  - For ease of use, set this local environment variable so kubectl uses the downloaded file:
-    - **export KUBECONFIG=$(pwd)/kubeconfig**
+  - Run the following
+    sh deployTestCluster2.sh
 
-  - Run this command to list all Kubernetes nodes
-    - **kubectl get nodes**
+
   
   ![image](https://user-images.githubusercontent.com/45666264/167780044-0517ca11-e826-4d56-ab73-a71b1a9c308d.png)
 
 
-# Installation of sonobuoy
-  - Download the latest release for your client platform. 
-    - (We are installing v14 - https://github.com/vmware-tanzu/sonobuoy/releases/tag/v0.14.0)
-    - **wget https://github.com/vmware-tanzu/sonobuoy/releases/download/v0.14.0/sonobuoy_0.14.0_linux_amd64.tar.gz**
-  - Extract the tarball:
-    - tar -xvf <RELEASE_TARBALL_NAME>.tar.gz
-    - Example - **tar -xvf sonobuoy_0.14.0_linux_amd64.tar.gz**
-  - Rename the file
-  ``` 
-  mv sonobuoy sonobuoy14
-  ```
-  - Move the extracted sonobuoy executable to somewhere on your PATH.
-  ``` 
-  sudo cp sonobuoy14 /usr/bin
-  ```
    
 
   ![image](https://user-images.githubusercontent.com/45666264/167779374-537d045d-edc4-48cc-badb-2f02f7e475dc.png)
