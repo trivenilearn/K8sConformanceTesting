@@ -65,13 +65,15 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
   - Create ubuntu EC2- T2.Micro
    - **Install kubectl** 
     - Run the following commands
+``` 
     git clone https://github.com/SmithaVerity/K8sConformanceTesting
     cd K8sConformanceTesting/
     sh deployTestCluster1.sh
-
+``` 
 **Configure the kubectl environment**
+``` 
     chmod 400 <<keyname>>
-
+``` 
   ![image](https://user-images.githubusercontent.com/45666264/167778822-5b5b336a-9696-4362-ac52-e948a3384c32.png)
 
 
@@ -83,8 +85,9 @@ SSH Key (KeyName) - The name of an existing Amazon EC2 key pair, to enable SSH a
 
 
   - Run the following
-    sh deployTestCluster2.sh
-
+``` 
+sh deployTestCluster2.sh
+``` 
 
   
   ![image](https://user-images.githubusercontent.com/45666264/167780044-0517ca11-e826-4d56-ab73-a71b1a9c308d.png)
